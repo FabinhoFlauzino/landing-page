@@ -230,6 +230,28 @@ h4 {
 .w-100{
   width: 100%;
 }
+
+.title-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-block-end: 60px;
+}
+
+.grid-list{
+  display: grid;
+  gap: 30px;
+}
+
+.card-text {
+  font-size: var(--fs-4);
+}
+
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -378,9 +400,65 @@ header.active {
   #SERVICE
 \*-----------------------------------*/
 
+.service {
+  background-color: var(--snow);
+}
+
+.service .service-text {
+  margin-block-end: 20px;
+}
+
+.service-card {
+  background-color: var(--white);
+  padding: 50px 30px;
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-2);
+}
+
+.service-card .card-title{
+  margin-block: 35px 20px;
+  transition: var(--transition-1);
+}
+
+.service-card .card-title:is(:hover, :focus){
+  color: var(--sefety-orange);
+}
+
+.service .shape-2 {
+  display: none;
+}
+
+.service .shape-1 {
+  bottom: 0;
+  left: -50px;
+}
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+
+.about .container{
+  display: grid;
+  gap: 50px;
+}
+
+.about-banner .w-100 {
+  max-width: 90%;
+}
+
+.about .shape{
+  top: -25px;
+  right: -5px;
+}
+
+.about .section-text{
+  font-size: unset;
+  margin-block: 30px 40px;
+}
+
+.about .btn{
+  max-width: max-content;
+}
 
 /*-----------------------------------*\
   #PROJECT
